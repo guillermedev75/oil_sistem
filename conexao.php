@@ -11,5 +11,9 @@
     $host   = 'us-cdbr-east-05.cleardb.net';
 
     $connection = new PDO("mysql:host=".$host.";dbname=".$dbname,$user,$pw);
+
+    
+    $increment = $connection->query("set @@auto_increment_increment=1");
+    $offset = $connection->query("set @@auto_increment_offset=1");
     
 ?>
