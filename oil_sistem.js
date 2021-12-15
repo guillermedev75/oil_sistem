@@ -87,6 +87,8 @@ $(document).ready(function(){
             dataType: 'json',
             data: { type: "create-carro", carro: carroInput },
             success: () => {
+
+                alert("Carro criado com sucesso!")
                 createCarroModal.modal('hide')
                 getCarros()
             }   
@@ -107,6 +109,7 @@ $(document).ready(function(){
             data: { type: "delete-carro", id: deleteid },
             success: () => {
 
+                alert("Carro deletado com sucesso!")
                 getCarros()
 
             }
