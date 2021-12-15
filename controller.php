@@ -16,10 +16,9 @@
 
         $carro = $_POST["carro"];
         
-        $sql = $connection->query("INSERT INTO carros ( carro_name ) VALUES ( '$carro' )");
-        
-        // echo json_encode("foi");
+        $sql = $connection->query("insert into carros (carro_name) values ('$carro')");
 
+        echo json_encode("foi");
     
     }
 
