@@ -18,7 +18,7 @@
         
         $sql = $connection->query("INSERT INTO carros ( carro_name ) VALUES ( '$carro' )");
         
-        echo json_encode("foi");
+        // echo json_encode("foi");
 
     
     }

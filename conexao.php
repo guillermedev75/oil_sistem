@@ -10,8 +10,6 @@
     $dbname = 'heroku_7e8128184ecbd0a';
     $host   = 'us-cdbr-east-05.cleardb.net';
 
-    $connectionString = "mysql:host=".$host.";dbname=".$dbname.",".$user.",".$pw;
-
     $connection = new PDO("mysql:host=".$host.";dbname=".$dbname,$user,$pw);
     
 ?>
