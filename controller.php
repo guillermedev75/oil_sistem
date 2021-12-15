@@ -18,7 +18,7 @@
         
         $sql = $connection->prepare("insert into carros (carro_name) values (?)");
         $sql->bindValue(1,$carro,PDO::PARAM_STR);
-        $sql.execute();
+        $sql->execute();
 
         echo json_encode("foi");
     
