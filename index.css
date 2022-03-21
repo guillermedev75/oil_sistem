@@ -1,0 +1,37 @@
+.modalStag {
+
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    text-align: center;
+
+    margin: 30% auto;
+    padding: 20px;
+    z-index: 100;
+    
+}
+
+.fundoModal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    top: 0;
+    
+    transform:translateY(-150%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+
+}
+
+#fecharModal {
+    z-index: 102;
+    display: none;
+}
